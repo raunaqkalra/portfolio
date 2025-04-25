@@ -49,67 +49,41 @@ export default function Home() {
           <div className="space-y-8">
             <div className="p-8 rounded-2xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl">
               <h3 className="text-2xl font-bold mb-2">Senior Software Engineer</h3>
-              <p className="text-blue-600 dark:text-blue-400 mb-2">Kellton Tech Solutions Ltd. - Gurugram</p>
-              <p className="text-gray-500 dark:text-gray-400 mb-4">08/2021 - Current</p>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Led the development of AdaniOne application, integrating multiple business verticals and managing state using Provider pattern.
-              </p>
-              <div className="flex items-center space-x-4">
-                <Link 
-                  href="/experience/kellton"
-                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors flex items-center"
-                >
-                  View Details →
-                </Link>
-                <a 
-                  href="https://play.google.com/store/apps/details?id=com.adanione.android" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
-                >
-                  View on Play Store
-                </a>
-              </div>
-            </div>
-
-            <div className="p-8 rounded-2xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl">
-              <h3 className="text-2xl font-bold mb-2">Flutter Developer</h3>
-              <p className="text-blue-600 dark:text-blue-400 mb-2">VerboseTechLabs</p>
-              <p className="text-gray-500 dark:text-gray-400 mb-4">11/2020 - 08/2021</p>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Developed multiple applications for food delivery platform including user, store, and delivery partner apps.
-              </p>
-              <Link 
-                href="/experience/verbose"
-                className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors flex items-center"
-              >
+              <p className="text-blue-400 mb-2">Kellton Tech Solutions Ltd. - Gurugram</p>
+              <p className="text-gray-400 mb-4">May 2023 - Present</p>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li>Leading the development of AdaniOne mobile application</li>
+                <li>Implementing new features and optimizing performance</li>
+                <li>Mentoring junior developers and conducting code reviews</li>
+              </ul>
+              <Link href="/experience/kellton" className="mt-4 inline-block text-blue-400 hover:text-blue-300">
                 View Details →
               </Link>
             </div>
 
             <div className="p-8 rounded-2xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl">
               <h3 className="text-2xl font-bold mb-2">Flutter Developer</h3>
-              <p className="text-blue-600 dark:text-blue-400 mb-2">ALGOWIRE TRADING TECHNOLOGIES PVT. LTD.</p>
-              <p className="text-gray-500 dark:text-gray-400 mb-4">05/2020 - 11/2020</p>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Developed a hybrid e-commerce application for women's fashion retail with integrated payment solutions.
-              </p>
-              <div className="flex items-center space-x-4">
-                <Link 
-                  href="/experience/algowire"
-                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors flex items-center"
-                >
-                  View Details →
-                </Link>
-                <a 
-                  href="http://www.saltatire.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
-                >
-                  Visit Website
-                </a>
-              </div>
+              <p className="text-blue-400 mb-2">VerboseTechLabs</p>
+              <p className="text-gray-400 mb-4">Jan 2023 - May 2023</p>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li>Developed cross-platform mobile applications</li>
+                <li>Implemented UI/UX designs and animations</li>
+                <li>Integrated RESTful APIs and third-party services</li>
+              </ul>
+            </div>
+
+            <div className="p-8 rounded-2xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl">
+              <h3 className="text-2xl font-bold mb-2">Flutter Developer</h3>
+              <p className="text-blue-400 mb-2">ALGOWIRE TRADING TECHNOLOGIES PVT. LTD.</p>
+              <p className="text-gray-400 mb-4">Aug 2021 - Jan 2023</p>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li>Built e-commerce mobile applications</li>
+                <li>Integrated payment gateways and authentication</li>
+                <li>Optimized app performance and user experience</li>
+              </ul>
+              <Link href="/experience/algowire" className="mt-4 inline-block text-blue-400 hover:text-blue-300">
+                View Details →
+              </Link>
             </div>
           </div>
         </div>
@@ -117,18 +91,33 @@ export default function Home() {
 
       {/* Skills Section */}
       <section className="container mx-auto px-4 py-20" id="skills">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Skills</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {[
-              "Flutter", "Dart", "Android", "iOS", "Google Maps", "REST API",
-              "Provider Pattern", "MVVM", "Repository Pattern", "Jenkins",
-              "Azure", "Firebase", "Bloc Pattern", "Zeplin", "Figma"
-            ].map((skill, index) => (
-              <div key={skill} className="p-4 text-center bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl transform transition-all duration-300 hover:scale-105">
-                <p className="font-semibold">{skill}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl text-center">
+              <h3 className="text-xl font-bold mb-2">Mobile Development</h3>
+              <p className="text-gray-300">Flutter, Dart, React Native</p>
+            </div>
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl text-center">
+              <h3 className="text-xl font-bold mb-2">Web Development</h3>
+              <p className="text-gray-300">React, Next.js, TypeScript</p>
+            </div>
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl text-center">
+              <h3 className="text-xl font-bold mb-2">Backend</h3>
+              <p className="text-gray-300">Node.js, Express, MongoDB</p>
+            </div>
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl text-center">
+              <h3 className="text-xl font-bold mb-2">UI/UX</h3>
+              <p className="text-gray-300">Figma, Material Design</p>
+            </div>
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl text-center">
+              <h3 className="text-xl font-bold mb-2">Version Control</h3>
+              <p className="text-gray-300">Git, GitHub, Bitbucket</p>
+            </div>
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl text-center">
+              <h3 className="text-xl font-bold mb-2">Testing</h3>
+              <p className="text-gray-300">Jest, Flutter Test</p>
+            </div>
           </div>
         </div>
       </section>
@@ -137,28 +126,10 @@ export default function Home() {
       <section className="container mx-auto px-4 py-20" id="education">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Education</h2>
-          
-          <div className="space-y-8">
-            <div className="p-8 rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
-              <h3 className="text-2xl font-bold mb-2">B.Tech: Information Technology</h3>
-              <p className="text-blue-600 dark:text-blue-400 mb-2">Guru Tegh Bahadur Institute Of Technology</p>
-              <p className="text-gray-500 dark:text-gray-400 mb-2">03/2021</p>
-              <p className="text-gray-600 dark:text-gray-300">Percentage: 81.73 / 100</p>
-            </div>
-
-            <div className="p-8 rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
-              <h3 className="text-2xl font-bold mb-2">12th</h3>
-              <p className="text-blue-600 dark:text-blue-400 mb-2">Modern International School, West Delhi</p>
-              <p className="text-gray-500 dark:text-gray-400 mb-2">01/2017</p>
-              <p className="text-gray-600 dark:text-gray-300">Percentage: 80.80 / 100</p>
-            </div>
-
-            <div className="p-8 rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
-              <h3 className="text-2xl font-bold mb-2">10th</h3>
-              <p className="text-blue-600 dark:text-blue-400 mb-2">Delhi Public School</p>
-              <p className="text-gray-500 dark:text-gray-400 mb-2">01/2015</p>
-              <p className="text-gray-600 dark:text-gray-300">Percentage: 79.80 / 100</p>
-            </div>
+          <div className="p-8 rounded-2xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl">
+            <h3 className="text-2xl font-bold mb-2">Bachelor of Technology</h3>
+            <p className="text-blue-400 mb-2">Computer Science Engineering</p>
+            <p className="text-gray-400">Guru Gobind Singh Indraprastha University - 2017-2021</p>
           </div>
         </div>
       </section>
@@ -167,43 +138,35 @@ export default function Home() {
       <section className="container mx-auto px-4 py-20" id="languages">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Languages</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
-              <h3 className="text-xl font-bold mb-2">Hindi</h3>
-              <p className="text-gray-600 dark:text-gray-300">First Language</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl text-center">
+              <p className="text-gray-300">English</p>
+              <p className="text-sm text-gray-400">Professional</p>
             </div>
-            <div className="p-6 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
-              <h3 className="text-xl font-bold mb-2">English</h3>
-              <p className="text-gray-600 dark:text-gray-300">Advanced (C1)</p>
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl text-center">
+              <p className="text-gray-300">Hindi</p>
+              <p className="text-sm text-gray-400">Native</p>
             </div>
-            <div className="p-6 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
-              <h3 className="text-xl font-bold mb-2">French</h3>
-              <p className="text-gray-600 dark:text-gray-300">Beginner (A1)</p>
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl text-center">
+              <p className="text-gray-300">French</p>
+              <p className="text-sm text-gray-400">Beginner</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Activities and Honors Section */}
+      {/* Activities Section */}
       <section className="container mx-auto px-4 py-20" id="activities">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Activities And Honors</h2>
-          <div className="space-y-8">
-            <div className="p-8 rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
-              <h3 className="text-2xl font-bold mb-4">Awards</h3>
-              <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
-                <li>ADL Catalyst Award</li>
-                <li>Performer of the Month</li>
-              </ul>
+          <h2 className="text-4xl font-bold text-center mb-12">Activities & Honors</h2>
+          <div className="space-y-6">
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl">
+              <h3 className="text-xl font-bold mb-2">Hackathon Winner</h3>
+              <p className="text-gray-300">Won first prize in CodeFest 2020 for developing a healthcare app</p>
             </div>
-            
-            <div className="p-8 rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
-              <h3 className="text-2xl font-bold mb-4">Activities</h3>
-              <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
-                <li>Playing Guitar</li>
-                <li>Playing Basketball</li>
-                <li>Cooking</li>
-              </ul>
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl">
+              <h3 className="text-xl font-bold mb-2">Technical Speaker</h3>
+              <p className="text-gray-300">Regular speaker at local tech meetups and conferences</p>
             </div>
           </div>
         </div>
@@ -213,51 +176,47 @@ export default function Home() {
       <section className="container mx-auto px-4 py-20" id="accomplishments">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Accomplishments</h2>
-          <div className="p-8 rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
-            <p className="text-xl text-gray-600 dark:text-gray-300">🏆 Performer of the Month</p>
+          <div className="space-y-6">
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl">
+              <h3 className="text-xl font-bold mb-2">ADL Catalyst Award</h3>
+              <p className="text-gray-300">Recognized for exceptional performance and innovation in software development</p>
+            </div>
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl">
+              <h3 className="text-xl font-bold mb-2">Performer of the Month</h3>
+              <p className="text-gray-300">Awarded for outstanding contributions and consistent high performance</p>
+            </div>
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl">
+              <h3 className="text-xl font-bold mb-2">Published Apps</h3>
+              <p className="text-gray-300">Successfully published 5+ apps on Google Play Store</p>
+            </div>
+            <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl">
+              <h3 className="text-xl font-bold mb-2">Performance Optimization</h3>
+              <p className="text-gray-300">Reduced app loading time by 40% through code optimization</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
       <section className="container mx-auto px-4 py-20" id="contact">
-        <div className="max-w-3xl mx-auto p-8 rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
+        <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Contact Information</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="p-6 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
-              <p className="space-y-2">
-                <span className="font-semibold block">Email</span>
-                <a href="mailto:kraunaq58@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
+          <div className="p-8 rounded-2xl bg-gray-800/80 backdrop-blur-lg border border-gray-700 shadow-xl">
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-xl font-bold mb-2">Email</h3>
+                <a href="mailto:kraunaq58@gmail.com" className="text-blue-400 hover:text-blue-300">
                   kraunaq58@gmail.com
                 </a>
-              </p>
-            </div>
-            <div className="p-6 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
-              <p className="space-y-2">
-                <span className="font-semibold block">Phone</span>
-                <a href="tel:+919996666582" className="text-blue-600 dark:text-blue-400 hover:underline hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
-                  +91-9996666582
-                </a>
-              </p>
-            </div>
-            <div className="p-6 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
-              <p className="space-y-2">
-                <span className="font-semibold block">Location</span>
-                <span className="text-gray-600 dark:text-gray-300">Rewari, Haryana 123401</span>
-              </p>
-            </div>
-            <div className="p-6 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl">
-              <p className="space-y-2">
-                <span className="font-semibold block">LinkedIn</span>
-                <a 
-                  href="https://www.linkedin.com/in/raunaqkalra/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 hover:underline hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
-                >
-                  linkedin.com/in/raunaqkalra
-                </a>
-              </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Phone</h3>
+                <p className="text-gray-300">+91 9996666582</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Location</h3>
+                <p className="text-gray-300">Gurugram, India</p>
+              </div>
             </div>
           </div>
         </div>
